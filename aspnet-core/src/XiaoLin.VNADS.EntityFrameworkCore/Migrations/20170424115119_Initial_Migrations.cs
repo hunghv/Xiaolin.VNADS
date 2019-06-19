@@ -753,7 +753,7 @@ namespace XiaoLin.VNADS.Migrations
                 columns: new[] { "UserId", "TenantId" });
 
             migrationBuilder.CreateIndex(
-                name: "IX_AbpUserLoginAttempts_TenancyName_UserNameOrEmailAddress_Result",
+                name: "IX_AbpUserLoginAttempts",
                 table: "AbpUserLoginAttempts",
                 columns: new[] { "TenancyName", "UserNameOrEmailAddress", "Result" });
 
@@ -818,12 +818,12 @@ namespace XiaoLin.VNADS.Migrations
                 columns: new[] { "TenantId", "Source", "LanguageName", "Key" });
 
             migrationBuilder.CreateIndex(
-                name: "IX_AbpNotificationSubscriptions_NotificationName_EntityTypeName_EntityId_UserId",
+                name: "IX_AbpNotificationSubscriptions_1",
                 table: "AbpNotificationSubscriptions",
                 columns: new[] { "NotificationName", "EntityTypeName", "EntityId", "UserId" });
 
             migrationBuilder.CreateIndex(
-                name: "IX_AbpNotificationSubscriptions_TenantId_NotificationName_EntityTypeName_EntityId_UserId",
+                name: "IX_AbpNotificationSubscriptions_2",
                 table: "AbpNotificationSubscriptions",
                 columns: new[] { "TenantId", "NotificationName", "EntityTypeName", "EntityId", "UserId" });
 

@@ -4,7 +4,7 @@
     {
         public const string LocalizationSourceName = "VNADS";
 
-        public const string ConnectionStringName = "Default";
+        public const string ConnectionStringName = "DefaultConnection";
 
         public const bool MultiTenancyEnabled = true;
     }
